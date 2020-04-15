@@ -1,0 +1,39 @@
+.header {
+  font-size: 7rem;
+  animation-iteration-count: 1;
+}
+
+.first {
+  animation-name: fadeInUp;
+  animation-duration: 0.45s;
+  animation-delay: 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.second {
+  animation-name: fadeInUp;
+  animation-duration: 0.45s;
+  animation-delay: 2s;
+  display: block;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
