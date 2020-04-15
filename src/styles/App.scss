@@ -1,32 +1,145 @@
-.header {
-  font-size: 7rem;
-  animation-iteration-count: 1;
+@font-face {
+  font-family: "Archia";
+  src: url("fonts/Archia/archia-thin-webfont.eot");
+  src: url("fonts/Archia/archia-thin-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/Archia/archia-thin-webfont.woff2") format("woff2"),
+    url("fonts/Archia/archia-thin-webfont.woff") format("woff"),
+    url("fonts/Archia/archia-thin-webfont.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
 }
 
-.first {
-  animation-name: fadeInUp;
-  animation-duration: 0.45s;
-  animation-delay: 1s;
-  opacity: 0;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
+@font-face {
+  font-family: "Archia";
+  src: url("fonts/Archia/archia-light-webfont.eot");
+  src: url("fonts/Archia/archia-light-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/Archia/archia-light-webfont.woff2") format("woff2"),
+    url("fonts/Archia/archia-light-webfont.woff") format("woff"),
+    url("fonts/Archia/archia-light-webfont.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
 }
 
-.second {
-  animation-name: fadeInUp;
-  animation-duration: 0.45s;
-  animation-delay: 2s;
-  display: block;
-  opacity: 0;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
+@font-face {
+  font-family: "Archia";
+  src: url("fonts/Archia/archia-regular-webfont.eot");
+  src: url("fonts/Archia/archia-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/Archia/archia-regular-webfont.woff2") format("woff2"),
+    url("fonts/Archia/archia-regular-webfont.woff") format("woff"),
+    url("fonts/Archia/archia-regular-webfont.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
 }
 
-.fadeInUp {
-  animation-name: fadeInUp;
+@font-face {
+  font-family: "Archia";
+  src: url("fonts/Archia/archia-medium-webfont.eot");
+  src: url("fonts/Archia/archia-medium-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/Archia/archia-medium-webfont.woff2") format("woff2"),
+    url("fonts/Archia/archia-medium-webfont.woff") format("woff"),
+    url("fonts/Archia/archia-medium-webfont.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
 
-@keyframes fadeInUp {
+@font-face {
+  font-family: "Archia";
+  src: url("fonts/Archia/archia-semibold-webfont.eot");
+  src: url("fonts/Archia/archia-semibold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/Archia/archia-semibold-webfont.woff2") format("woff2"),
+    url("fonts/Archia/archia-semibold-webfont.woff") format("woff"),
+    url("fonts/Archia/archia-semibold-webfont.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Archia";
+  src: url("fonts/Archia/archia-bold-webfont.eot");
+  src: url("fonts/Archia/archia-bold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/Archia/archia-bold-webfont.woff2") format("woff2"),
+    url("fonts/Archia/archia-bold-webfont.woff") format("woff"),
+    url("fonts/Archia/archia-bold-webfont.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+* {
+  font-family: "Archia";
+}
+
+.center {
+  align-content: center;
+}
+
+.landing-content {
+  padding-top: 80px;
+  padding-left: 40px;
+
+  .header {
+    font-size: 4rem;
+    animation-iteration-count: 1;
+
+    .first {
+      animation-name: fadeInDown;
+      animation-duration: 0.45s;
+      animation-delay: 1s;
+      opacity: 0;
+      animation-fill-mode: forwards;
+      animation-timing-function: linear;
+    }
+
+    .second {
+      animation-name: fadeInDown;
+      animation-duration: 0.45s;
+      animation-delay: 2.2s;
+      opacity: 0;
+      animation-fill-mode: forwards;
+      animation-timing-function: linear;
+    }
+  }
+
+  .image {
+    height: 37vmin;
+    border-radius: 50% !important;
+    margin-bottom: 50px;
+    border: 1vh solid #232d3622;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in;
+  }
+}
+
+/*
+  Animation Scripts...
+*/
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown {
   0% {
     opacity: 0;
     transform: translateY(-30px);
