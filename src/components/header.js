@@ -1,42 +1,62 @@
+import React, { Component, Fragment } from "react"
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import "../styles/App.scss"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      // marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
+// MUI stuff
+import Grid from "@material-ui/core/Grid"
+import Typography from "@material-ui/core/Typography"
+
+class Header extends Component {
+  render() {
+    return (
+      <div className="navbar">
+        <Typography
+          color="inherit"
+          className="navlogo"
+          component={AniLink}
+          variant="h6"
+          swipe
+          direction="right"
           to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
         >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+          logo
+        </Typography>
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
+        <Grid alignItems="flex-start" justify="flex-end" direction="row">
+          <Typography
+            className="navlink"
+            component={AniLink}
+            variant="h5"
+            paintDrip
+            hex="#e2e7ee"
+            color="inherit"
+            to="/projects"
+          >
+            Projects
+          </Typography>
+          <Typography
+            color="inherit"
+            className="navlink"
+            component={AniLink}
+            variant="h5"
+            to="/skills"
+          >
+            Skills
+          </Typography>
+          <Typography
+            color="inherit"
+            className="navlink"
+            variant="h5"
+            component={AniLink}
+            to="/about"
+          >
+            About
+          </Typography>
+        </Grid>
+      </div>
+    )
+  }
 }
 
 export default Header

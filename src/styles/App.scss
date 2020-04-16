@@ -72,12 +72,40 @@
 
 * {
   font-family: "Archia";
+  color: #201d1db2;
+}
+
+// NAVBAR
+.navbar {
+  background: transparent !important;
+  box-shadow: none !important;
+  margin-bottom: 50px;
+
+  .navlink {
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #201d1db2;
+    padding: 5px 10px;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    background: linear-gradient(to right, #f5f7fa 49.4%, #adbace 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.5s ease-out;
+
+    &:hover {
+      background-position: left bottom;
+    }
+  }
 }
 
 .center {
   align-content: center;
 }
 
+// LANDING PAGE
 .landing-content {
   padding-top: 80px;
   padding-left: 40px;
@@ -109,12 +137,18 @@
     height: 37vmin;
     border-radius: 50% !important;
     margin-bottom: 50px;
-    border: 1vh solid #232d3622;
+    border: 1vh solid #8f97a3b7;
     animation-name: fadeIn;
     animation-duration: 1s;
     animation-delay: 0s;
     animation-timing-function: ease-in;
   }
+}
+
+// PROJECTS PAGE
+.projects-page {
+  padding-top: 80px;
+  padding-left: 40px;
 }
 
 /*

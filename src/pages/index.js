@@ -1,6 +1,7 @@
 import React from "react"
-// import { Link } from "gatsby"
-import Typical from "react-typical"
+import { Link } from "gatsby"
+
+import ReactTypingEffect from "react-typing-effect"
 import { Container, Row, Col } from "reactstrap"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -11,23 +12,14 @@ import "../styles/App.scss"
 const IndexPage = () => {
   const steps = [
     "I'm a Student 🎓",
-    1000,
     "I'm a Programmer 💻",
-    1000,
     "I'm a ☕ lover",
-    1000,
-    "I'm a pretty fast learner and always intrested in learning new technologies🤓",
-    1000,
+    "I'm a pretty fast learner and always intrested in learning new technologies 🤓",
     "I'm a Thinker 💡",
-    1000,
     "Coding is my passion 🔥",
-    1000,
     "I think one of my values is the ability to resolve problems",
-    1000,
     "I'm a Developer ♨️",
-    1000,
     "I'm a Rapper (wannabe)",
-    1000,
   ]
   return (
     <Layout>
@@ -44,11 +36,19 @@ const IndexPage = () => {
               <div className="second">I am Faizan</div>
             </h1>
             <p>
-              <Typical loop={Infinity} wrapper="b" steps={steps} />
+              <ReactTypingEffect
+                text={steps}
+                eraseDelay={1200}
+                speed={60}
+                typingDelay={500}
+              />
             </p>
           </Col>
         </Row>
       </Container>
+      <Link to="/projects" style={{ color: "transparent", fontSize: "0rem" }}>
+        a
+      </Link>
     </Layout>
   )
 }

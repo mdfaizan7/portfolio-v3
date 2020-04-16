@@ -1,12 +1,15 @@
 html {
   font-family: sans-serif;
-  background-color: #fde311;
+  background: #f5f7fa;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 
 .body {
-  background-color: #fde311;
+  background: #f5f7fa;
+  background: linear-gradient(180deg, #adbace 20%, #f5f7fa 100%);
+  height: 100%;
+  width: 100%;
 }
 
 body {

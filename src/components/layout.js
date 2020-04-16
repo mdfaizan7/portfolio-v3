@@ -13,6 +13,15 @@ import Header from "./header"
 import "./layout.css"
 import "bootstrap/dist/css/bootstrap.min.css"
 
+import { createMuiTheme } from "@material-ui/core/styles"
+import { ThemeProvider } from "@material-ui/styles"
+
+const theme = createMuiTheme({
+  typography: {
+    fontFamily: ["Archia"].join(","),
+  },
+})
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -25,22 +34,16 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+    <ThemeProvider theme={theme}>
       <div className="body">
         <div className="container">
+          <Header />
           <main className="">{children}</main>
         </div>
       </div>
-    </>
+    </ThemeProvider>
   )
 }
-
-// ;<footer>
-//   © {new Date().getFullYear()}, Built with
-//   {` `}
-//   <a href="https://www.gatsbyjs.org">Gatsby</a>
-// </footer>
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
