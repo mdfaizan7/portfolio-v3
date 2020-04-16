@@ -29,7 +29,7 @@ class Header extends Component {
             component={AniLink}
             variant="h5"
             paintDrip
-            hex="#e2e7ee"
+            hex="#98b8ec"
             color="inherit"
             to="/projects"
           >
@@ -51,7 +51,7 @@ class Header extends Component {
             component={AniLink}
             to="/about"
           >
-            About
+            About Me
           </Typography>
         </Grid>
       </div>

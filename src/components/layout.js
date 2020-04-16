@@ -18,7 +18,7 @@ import { ThemeProvider } from "@material-ui/styles"
 
 const theme = createMuiTheme({
   typography: {
-    fontFamily: ["Archia"].join(","),
+    fontFamily: ["Archia", "cursive"].join(","),
   },
 })
 
