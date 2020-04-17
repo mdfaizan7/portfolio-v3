@@ -1,15 +1,19 @@
 import React from "react"
-import { Link } from "gatsby"
-import { Container, Row, Col } from "reactstrap"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { Link } from "gatsby"
+import { Container, Row, Col } from "reactstrap"
+// mui stuff
 import List from "@material-ui/core/List"
 import ListItem from "@material-ui/core/ListItem"
 import ListItemText from "@material-ui/core/ListItemText"
 import Divider from "@material-ui/core/Divider"
-import "../styles/App.scss"
+// images
 import bitConnect from "../images/bit-connect.png"
 import bitBlogs from "../images/bit-blogs.png"
+
+import "../styles/App.scss"
+
 const IndexPage = () => {
   const [selectedIndex, setSelectedIndex] = React.useState(0)
 
@@ -64,6 +68,28 @@ const IndexPage = () => {
             ) : (
               <img src={bitBlogs} alt="bitBlogs" className="image" />
             )}
+            <a
+              href={
+                selectedIndex === 0
+                  ? "https://bitconnect-b7b67.firebaseapp.com/"
+                  : "https://peaceful-montalcini-173481.netlify.app/"
+              }
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Demo
+            </a>
+            <a
+              href={
+                selectedIndex === 0
+                  ? "https://github.com/mdfaizan7/react-bitConnect-client"
+                  : "https://github.com/mdfaizan7/gatsby-bit-blogs"
+              }
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Code Repository
+            </a>
           </Col>
         </Row>
       </Container>
@@ -73,7 +99,5 @@ const IndexPage = () => {
     </Layout>
   )
 }
-
-//  <Link to="/page-2/">Go to page 2</Link>
 
 export default IndexPage

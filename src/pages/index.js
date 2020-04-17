@@ -1,10 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
-
-import ReactTypingEffect from "react-typing-effect"
-import { Container, Row, Col } from "reactstrap"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import ReactTypingEffect from "react-typing-effect"
+import { Container, Row, Col } from "reactstrap"
 import MyImg from "../images/my-img.jpg"
 
 import "../styles/App.scss"

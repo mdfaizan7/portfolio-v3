@@ -1,5 +1,6 @@
 import React from "react"
 import { useSpring, animated } from "react-spring"
+
 import "../styles/App.scss"
 
 const calc = (x, y) => [
@@ -15,6 +16,7 @@ const SkillCard = ({ url, caption }) => {
     xys: [0, 0, 1],
     config: { mass: 1, tension: 170, friction: 26 },
   }))
+
   return (
     <div>
       <animated.div

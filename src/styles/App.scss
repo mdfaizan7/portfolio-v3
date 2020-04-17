@@ -121,7 +121,7 @@
 .landing-content {
   padding-top: 80px;
   padding-left: 40px;
-  min-height: 74vh;
+  min-height: 74.5vh;
   font-family: "Archia";
   color: #201d1db2;
   .header {
@@ -161,7 +161,7 @@
 // PROJECTS PAGE
 .projects-page {
   color: #000000;
-  font-size: 1.8rem !important;
+  font-family: "Archia";
   animation-name: fadeInUp;
   animation-duration: 0.55s;
   animation-delay: 1s;
@@ -175,6 +175,22 @@
     border-radius: 1% !important;
     margin-top: 20px;
   }
+
+  a {
+    text-decoration: none !important;
+    font-size: 1.2rem;
+    margin: 104px;
+    color: #000000;
+    transition: all 0.5s ease-out;
+
+    &:hover {
+      color: rgb(121, 122, 124);
+    }
+    &:hover::before {
+      transform: translateY(0);
+      transition: transform 0.25s ease-out;
+    }
+  }
 }
 
 // SKILLS PAGE
@@ -185,7 +201,7 @@
   display: flex;
   animation-name: fadeInUp;
   animation-duration: 0.75s;
-  animation-delay: 0.8s;
+  animation-delay: 0.7s;
   opacity: 0;
   animation-fill-mode: forwards;
 

@@ -1,10 +1,11 @@
 import React from "react"
-import { Link } from "gatsby"
-import { Container, Row, Col } from "reactstrap"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { Link } from "gatsby"
+import { Container, Row, Col } from "reactstrap"
 import SkillCard from "../components/skillCard"
 import { skills } from "../util/skillsItems"
+
 import "../styles/App.scss"
 
 const Skills = () => {
