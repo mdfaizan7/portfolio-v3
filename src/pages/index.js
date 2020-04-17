@@ -27,7 +27,7 @@ const IndexPage = () => {
       <Container className="landing-content">
         <Row>
           <Col md={4}>
-            <img src={MyImg} alt="my image" className="image" />
+            <img src={MyImg} alt="profile" className="image" />
           </Col>
           <Col md={8}>
             {" "}

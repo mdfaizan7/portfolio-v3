@@ -7,41 +7,20 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-
+import { Container } from "reactstrap"
 import Header from "./header"
 import "./layout.css"
 import "bootstrap/dist/css/bootstrap.min.css"
 
-import { createMuiTheme } from "@material-ui/core/styles"
-import { ThemeProvider } from "@material-ui/styles"
-
-const theme = createMuiTheme({
-  typography: {
-    fontFamily: ["Archia", "cursive"].join(","),
-  },
-})
-
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
-    <ThemeProvider theme={theme}>
-      <div className="body">
-        <div className="container">
-          <Header />
-          <main className="">{children}</main>
-        </div>
-      </div>
-    </ThemeProvider>
+    <div className="body">
+      <Container>
+        {" "}
+        <Header />
+        <main className="">{children}</main>
+      </Container>
+    </div>
   )
 }
 

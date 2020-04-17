@@ -1,10 +1,7 @@
-import React, { Component, Fragment } from "react"
-import { Link } from "gatsby"
+import React, { Component } from "react"
 import "../styles/App.scss"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
-// MUI stuff
-import Grid from "@material-ui/core/Grid"
 import Typography from "@material-ui/core/Typography"
 
 class Header extends Component {
@@ -22,15 +19,13 @@ class Header extends Component {
         >
           logo
         </Typography>
-
-        <Grid alignItems="flex-start" justify="flex-end" direction="row">
+        <div className="text ml-auto">
           <Typography
             className="navlink"
             component={AniLink}
             variant="h5"
             paintDrip
             hex="#98b8ec"
-            color="inherit"
             to="/projects"
           >
             Projects
@@ -39,6 +34,8 @@ class Header extends Component {
             color="inherit"
             className="navlink"
             component={AniLink}
+            cover
+            bg="#98b8ec"
             variant="h5"
             to="/skills"
           >
@@ -53,7 +50,7 @@ class Header extends Component {
           >
             About Me
           </Typography>
-        </Grid>
+        </div>
       </div>
     )
   }

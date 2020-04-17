@@ -70,9 +70,6 @@
   font-style: normal;
 }
 
-* {
-}
-
 // NAVBAR
 .navbar {
   background: transparent !important;
@@ -114,7 +111,6 @@
   color: #201d1db2;
   .header {
     font-size: 4rem;
-    animation-iteration-count: 1;
 
     .first {
       animation-name: fadeInDown;
@@ -151,7 +147,11 @@
 .projects-page {
   color: #000000;
   font-size: 1.8rem !important;
-
+  animation-name: fadeInUp;
+  animation-duration: 0.55s;
+  animation-delay: 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
   .list {
     padding-top: 80px;
     padding-left: 40px;
@@ -159,6 +159,43 @@
   .image {
     border-radius: 1% !important;
     margin-top: 20px;
+  }
+}
+
+// SKILLS PAGE
+.skills-page {
+  font-family: "Archia";
+  padding-top: 80px;
+  padding-left: 40px;
+  display: flex;
+  animation-name: fadeInUp;
+  animation-duration: 0.65s;
+  animation-delay: 0.8s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+
+  .caption {
+    position: absolute;
+    top: 98%;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+  .card {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+    background: rgb(255, 255, 255);
+    align-items: center;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s;
+    will-change: transform;
+    border: 15px solid white;
+  }
+
+  .card:hover {
+    box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
   }
 }
 
@@ -188,6 +225,22 @@
   0% {
     opacity: 0;
     transform: translateY(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInDown;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
   }
 
   100% {

@@ -11,7 +11,7 @@ import "../styles/App.scss"
 import bitConnect from "../images/bit-connect.png"
 import bitBlogs from "../images/bit-blogs.png"
 const IndexPage = () => {
-  const [selectedIndex, setSelectedIndex] = React.useState(1)
+  const [selectedIndex, setSelectedIndex] = React.useState(0)
 
   const handleListItemClick = (_, index) => {
     setSelectedIndex(index)
@@ -51,15 +51,18 @@ const IndexPage = () => {
                 selected={selectedIndex === 2}
                 onClick={event => handleListItemClick(event, 2)}
               >
-                <h6>BIT POSTS</h6>
+                <ListItemText
+                  primary="BIT POSTS"
+                  secondary="Bit Posts is a social networking app made using MERNG stack"
+                />
               </ListItem>
             </List>
           </Col>
           <Col md={8}>
             {selectedIndex === 0 ? (
-              <img src={bitConnect} className="image" />
+              <img src={bitConnect} alt="bitConnect" className="image" />
             ) : (
-              <img src={bitBlogs} className="image" />
+              <img src={bitBlogs} alt="bitBlogs" className="image" />
             )}
           </Col>
         </Row>
