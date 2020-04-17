@@ -76,7 +76,7 @@ export const skills = [
   },
   {
     url:
-      "url(https://media.licdn.com/dms/image/C4E0BAQE19TrEXW022w/company-logo_200_200/0?e=2159024400&v=beta&t=KSA1haVf2zqXDG5scvlmrXltTNA3MkkLLQpolQrTBTU)",
+      "url(https://seeklogo.com/images/A/apollo-logo-DC7DD3C444-seeklogo.com.png)",
     caption: "apollo graphql",
   },
   {

@@ -1,24 +1,19 @@
 import React, { Component } from "react"
 import "../styles/App.scss"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-
+// import SVGIcon from "./svgIcon"
 import Typography from "@material-ui/core/Typography"
+import SVGIcon from "../images/svgIcon.js"
 
 class Header extends Component {
   render() {
     return (
       <div className="navbar">
-        <Typography
-          color="inherit"
-          className="navlogo"
-          component={AniLink}
-          variant="h6"
-          swipe
-          direction="right"
-          to="/"
-        >
-          logo
-        </Typography>
+        <div className="icon">
+          <AniLink to="/" swipe>
+            <SVGIcon />
+          </AniLink>
+        </div>
         <div className="text ml-auto">
           <Typography
             className="navlink"
