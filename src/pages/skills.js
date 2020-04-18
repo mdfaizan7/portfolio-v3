@@ -11,7 +11,7 @@ import "../styles/App.scss"
 const Skills = () => {
   return (
     <Layout>
-      <SEO title="Skills" />
+      <SEO title="My Skills" />
       <Container className="skills-page">
         <Row>
           {skills.map(({ url, caption }) => (

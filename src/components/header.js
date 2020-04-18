@@ -44,6 +44,7 @@ class Header extends Component {
             to="/about"
             cover
             bg="#98b8ec"
+            duration={1.5}
             direction="down"
           >
             About Me

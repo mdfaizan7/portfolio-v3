@@ -23,7 +23,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO title="Projects" />
+      <SEO title="My Projects" />
       <Container className="projects-page">
         <Row>
           <Col md={4}>
