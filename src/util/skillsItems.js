@@ -43,8 +43,12 @@ export const skills = [
     caption: "css 3",
   },
   {
+<<<<<<< HEAD
     url:
       "url(https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/012011/stocklogos-template-01.png?itok=DapYF29D)",
+=======
+    url: "url(https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/012011/stocklogos-template-01.png?itok=DapYF29D)",
+>>>>>>> a3c00dc83ad9ba12d7d22cca69eb31e0432322e1
     caption: "html 5",
   },
   {
