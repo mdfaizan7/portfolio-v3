@@ -42,6 +42,9 @@ class Header extends Component {
             variant="h5"
             component={AniLink}
             to="/about"
+            cover
+            bg="#98b8ec"
+            direction="down"
           >
             About Me
           </Typography>
