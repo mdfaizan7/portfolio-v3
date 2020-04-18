@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import ReactTypingEffect from "react-typing-effect"
+import TypingEffect from "../components/typingEffect"
 import { Container, Row, Col } from "reactstrap"
 import MyImg from "../images/my-img.jpg"
 
@@ -35,12 +35,7 @@ const IndexPage = () => {
               <div className="second">I am Faizan</div>
             </h1>
             <p>
-              <ReactTypingEffect
-                text={steps}
-                eraseDelay={1200}
-                speed={60}
-                typingDelay={500}
-              />
+              <TypingEffect />
             </p>
           </Col>
         </Row>

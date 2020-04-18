@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Link } from "gatsby"
-import { Container, Row, Col } from "reactstrap"
+import { Container, Row } from "reactstrap"
 
 import "../styles/App.scss"
 

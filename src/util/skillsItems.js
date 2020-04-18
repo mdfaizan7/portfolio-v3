@@ -43,7 +43,8 @@ export const skills = [
     caption: "css 3",
   },
   {
-    url: "url(https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png)",
+    url:
+      "url(https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/012011/stocklogos-template-01.png?itok=DapYF29D)",
     caption: "html 5",
   },
   {
