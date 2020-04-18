@@ -14,18 +14,15 @@ const IndexPage = () => {
       <SEO title="Home" />
       <Container className="landing-content">
         <Row>
-          <Col md={4}>
+          <Col lg={4}>
             <img src={MyImg} alt="profile" className="image" />
           </Col>
-          <Col md={8}>
-            {" "}
+          <Col>
             <h1 className="header">
               <div className="first">Hi,</div>{" "}
               <div className="second">I am Faizan</div>
             </h1>
-            <p>
-              <TypingEffect />
-            </p>
+            <TypingEffect />
           </Col>
         </Row>
       </Container>

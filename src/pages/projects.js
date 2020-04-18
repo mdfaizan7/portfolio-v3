@@ -24,7 +24,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="My Projects" />
-      <Container className="projects-page">
+      <Container className="projects-page d-flex justify-content-center">
         <Row>
           <Col md={4}>
             <List className="list">
@@ -62,34 +62,42 @@ const IndexPage = () => {
               </ListItem>
             </List>
           </Col>
-          <Col md={8}>
-            {selectedIndex === 0 ? (
-              <img src={bitConnect} alt="bitConnect" className="image" />
-            ) : (
-              <img src={bitBlogs} alt="bitBlogs" className="image" />
-            )}
-            <a
-              href={
-                selectedIndex === 0
-                  ? "https://bitconnect-b7b67.firebaseapp.com/"
-                  : "https://peaceful-montalcini-173481.netlify.app/"
-              }
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Live Demo
-            </a>
-            <a
-              href={
-                selectedIndex === 0
-                  ? "https://github.com/mdfaizan7/react-bitConnect-client"
-                  : "https://github.com/mdfaizan7/gatsby-bit-blogs"
-              }
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Code Repository
-            </a>
+          <Col md={8} sm={12}>
+            <Row>
+              {selectedIndex === 0 ? (
+                <img src={bitConnect} alt="bitConnect" className="image" />
+              ) : (
+                <img src={bitBlogs} alt="bitBlogs" className="image" />
+              )}
+            </Row>
+            <Row>
+              <Col className="text-center" md={6}>
+                <a
+                  href={
+                    selectedIndex === 0
+                      ? "https://bitconnect-b7b67.firebaseapp.com/"
+                      : "https://peaceful-montalcini-173481.netlify.app/"
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live Demo
+                </a>
+              </Col>
+              <Col className="text-center" md={6}>
+                <a
+                  href={
+                    selectedIndex === 0
+                      ? "https://github.com/mdfaizan7/react-bitConnect-client"
+                      : "https://github.com/mdfaizan7/gatsby-bit-blogs"
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Code Repository
+                </a>
+              </Col>
+            </Row>
           </Col>
         </Row>
       </Container>

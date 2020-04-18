@@ -25,7 +25,8 @@ export const skills = [
     caption: "graphql",
   },
   {
-    url: "url(https://cdn.iconscout.com/icon/free/png-512/redux-283024.png)",
+    url:
+      "url(https://d33wubrfki0l68.cloudfront.net/45ed46a4aa7300c35494e9fc23ff4c1f61f62ab7/b7c39/static/redux_logo_2-24410881e63c96340db17ec232dfd1bf.png)",
     caption: "redux",
   },
   {
@@ -34,7 +35,7 @@ export const skills = [
   },
   {
     url:
-      "url(https://hackr.io/tutorials/learn-express-js/logo/logo-express-js?ver=1557508379)",
+      "url(https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png)",
     caption: "express.js",
   },
   {

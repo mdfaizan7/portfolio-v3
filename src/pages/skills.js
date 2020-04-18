@@ -15,7 +15,7 @@ const Skills = () => {
       <Container className="skills-page">
         <Row>
           {skills.map(({ url, caption }) => (
-            <Col md={3} key={url}>
+            <Col lg={3} key={url} md={4} sm={6}>
               <SkillCard url={url} caption={caption} />
             </Col>
           ))}

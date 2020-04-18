@@ -71,10 +71,10 @@
 }
 
 // NAVBAR
-.navbar {
+.header {
   background: transparent !important;
   box-shadow: none !important;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 
   .navlink {
     font-family: "Archia";
@@ -101,6 +101,7 @@
   .icon {
     height: 80px;
     width: 120px;
+    margin-bottom: 18px;
     fill: #201d1db2;
     transition: all 0.5s ease-out;
     &:hover {
@@ -121,12 +122,12 @@
 .landing-content {
   padding-top: 80px;
   padding-left: 40px;
-  min-height: 74.5vh;
+  min-height: 72vh;
   font-family: "Archia";
   color: #201d1db2;
   .header {
     font-size: 4rem;
-
+    margin-bottom: 10px;
     .first {
       animation-name: fadeInDown;
       animation-duration: 0.45s;
@@ -179,7 +180,6 @@
   a {
     text-decoration: none !important;
     font-size: 1.2rem;
-    margin: 104px;
     color: #000000;
     transition: all 0.5s ease-out;
 
@@ -217,7 +217,8 @@
     margin-bottom: 30px;
     background: rgb(255, 255, 255);
     align-items: center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center center;
     box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
     transition: box-shadow 0.5s;
@@ -237,7 +238,7 @@
   animation-delay: 0.7s;
   animation-duration: 0.75s;
   opacity: 0;
-  min-height: 74.5vh;
+  min-height: 72vh;
   animation-fill-mode: forwards;
   a {
     text-decoration: none !important;
@@ -256,7 +257,7 @@
   .links {
     ul {
       position: absolute;
-      top: 73%;
+      top: 75%;
       left: 50%;
       transform: translate(-50%, -50%);
       display: flex;
