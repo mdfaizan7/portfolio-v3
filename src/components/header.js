@@ -75,10 +75,10 @@ class Header extends Component {
                       to="/about"
                       cover
                       bg="#98b8ec"
-                      duration={1.5}
+                      duration={2}
                       direction="down"
                     >
-                      About<span style={{ color: "transparent" }}>s</span>Me
+                      About Me
                     </Typography>
                   </NavItem>
                 </Nav>

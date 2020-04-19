@@ -89,9 +89,11 @@
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all 0.5s ease-out;
+
     &:hover {
       color: #fff;
     }
+
     &:hover::before {
       transform: translateY(0);
       transition: transform 0.25s ease-out;
@@ -104,9 +106,11 @@
     margin-bottom: 18px;
     fill: #201d1db2;
     transition: all 0.5s ease-out;
+
     &:hover {
       fill: #fff;
     }
+
     &:hover::before {
       transform: translateY(0);
       transition: transform 0.25s ease-out;
@@ -125,9 +129,11 @@
   min-height: 72vh;
   font-family: "Archia";
   color: #201d1db2;
+
   .header {
     font-size: 4rem;
     margin-bottom: 10px;
+
     .first {
       animation-name: fadeInDown;
       animation-duration: 0.45s;
@@ -168,10 +174,12 @@
   animation-delay: 1s;
   opacity: 0;
   animation-fill-mode: forwards;
+
   .list {
     padding-top: 80px;
     padding-left: 40px;
   }
+
   .image {
     border-radius: 1% !important;
     margin-top: 20px;
@@ -186,6 +194,7 @@
     &:hover {
       color: rgb(121, 122, 124);
     }
+
     &:hover::before {
       transform: translateY(0);
       transition: transform 0.25s ease-out;
@@ -211,6 +220,7 @@
     text-transform: uppercase;
     font-size: 0.8rem;
   }
+
   .card {
     width: 200px;
     height: 200px;
@@ -224,22 +234,23 @@
     transition: box-shadow 0.5s;
     will-change: transform;
     border: 15px solid white;
-  }
 
-  .card:hover {
-    box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+    &:hover {
+      box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+    }
   }
 }
 
 .about-page {
   font-family: "Archia";
-  padding-top: 40px;
+  padding-top: 20px;
   animation-name: fadeInUp;
   animation-delay: 0.7s;
   animation-duration: 0.75s;
   opacity: 0;
-  min-height: 72vh;
+  min-height: 70vh;
   animation-fill-mode: forwards;
+  // overflow: hidden;
   a {
     text-decoration: none !important;
     font-size: 1.2rem;
@@ -249,20 +260,21 @@
     &:hover {
       color: rgb(121, 122, 124);
     }
+
     &:hover::before {
       transform: translateY(0);
       transition: transform 0.25s ease-out;
     }
   }
+
   .links {
     ul {
-      position: absolute;
-      top: 75%;
+      position: relative;
       left: 50%;
       transform: translate(-50%, -50%);
       display: flex;
-      margin: 0;
-      padding: 0;
+      margin-top: 40px;
+      max-width: 100%;
     }
 
     ul li {
@@ -304,6 +316,7 @@
       transition: 0.5s;
       box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
     }
+
     ul li a:before {
       content: "";
       position: absolute;
