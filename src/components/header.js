@@ -92,20 +92,3 @@ class Header extends Component {
 }
 
 export default Header
-
-{
-  /* <div className="navbar">
-        <Navbar expand="md" light>
-          <div className="container">
-            <NavbarBrand>
-              <div className="icon">
-                <AniLink to="/" cover direction="right" bg="#98b8ec">
-                  <SVGIcon />
-                </AniLink>
-              </div>
-            </NavbarBrand>
-            
-          </div>
-        </Navbar>{" "}
-      </div> */
-}
