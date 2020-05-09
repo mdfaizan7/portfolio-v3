@@ -1,16 +1,19 @@
 import React from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import clsx from "clsx"
-import Typography from "@material-ui/core/Typography"
 import SVGIcon from "./svgIcon.js"
+// mui stuff
+import { makeStyles, useTheme } from "@material-ui/core/styles"
 import Appbar from "@material-ui/core/Appbar"
 import CssBaseline from "@material-ui/core/CssBaseline"
 import Toolbar from "@material-ui/core/Toolbar"
-import { makeStyles, useTheme } from "@material-ui/core/styles"
+import Typography from "@material-ui/core/Typography"
 import Drawer from "@material-ui/core/Drawer"
 import IconButton from "@material-ui/core/IconButton"
+// mui icons
 import MenuIcon from "@material-ui/icons/Menu"
 import CloseIcon from "@material-ui/icons/Close"
+
 import "../styles/App.scss"
 
 const drawerWidth = "100vw"

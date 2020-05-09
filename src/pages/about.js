@@ -1,12 +1,16 @@
 import React from "react"
+import { Link } from "gatsby"
+// components
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Link } from "gatsby"
+// mui stuff
 import Container from "@material-ui/core/Container"
+// mui icons
 import EmailIcon from "@material-ui/icons/Email"
 import InstagramIcon from "@material-ui/icons/Instagram"
 import GitHubIcon from "@material-ui/icons/GitHub"
 import LinkedInIcon from "@material-ui/icons/LinkedIn"
+
 import "../styles/App.scss"
 
 const About = () => (

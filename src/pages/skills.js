@@ -1,10 +1,13 @@
 import React from "react"
+import { Link } from "gatsby"
+// components
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Link } from "gatsby"
+import SkillCard from "../components/skillCard"
+// mui icons
 import Container from "@material-ui/core/Container"
 import Grid from "@material-ui/core/Grid"
-import SkillCard from "../components/skillCard"
+// utils
 import { skills } from "../util/skillsItems"
 
 import "../styles/App.scss"

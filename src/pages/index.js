@@ -1,10 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
+import MyImg from "../images/my-img.jpg"
+// components
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import TypingEffect from "../components/typingEffect"
+// mui stuff
 import Grid from "@material-ui/core/Grid"
-import MyImg from "../images/my-img.jpg"
 
 import "../styles/App.scss"
 
