@@ -7,7 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { Container } from "reactstrap"
+import Container from "@material-ui/core/Container"
 import Header from "./header"
 import "./layout.css"
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -22,7 +22,6 @@ const Layout = ({ children }) => {
         crossOrigin="anonymous"
       />
       <Container>
-        {" "}
         <Header />
         <main className="">{children}</main>
       </Container>

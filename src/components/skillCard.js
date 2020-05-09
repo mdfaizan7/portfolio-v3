@@ -19,12 +19,13 @@ const SkillCard = ({ url, caption }) => {
   }))
 
   return (
-    <div>
+    <div style={{ textAlign: "center" }}>
       <animated.div
         className="card"
         onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
         onMouseLeave={() => set({ xys: [0, 0, 1] })}
         style={{
+          display: "inline-block",
           transform: props.xys.interpolate(trans),
           backgroundImage: url,
         }}

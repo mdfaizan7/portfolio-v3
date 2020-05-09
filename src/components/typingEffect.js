@@ -6,9 +6,8 @@ const steps = [
   "I'm a Programmer 💻",
   "Coding is my passion 🔥",
   "I'm a ☕ lover",
-  "I'm a pretty fast learner and always intrested in learning new technologies 🤓",
   "I'm a Thinker 💡",
-  "I think one of my values is the ability to resolve problems",
+  "I love challenges",
   "I'm a Developer ♨️",
   "I'm a Rapper (wannabe)",
 ]

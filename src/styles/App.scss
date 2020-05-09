@@ -70,11 +70,30 @@
   font-style: normal;
 }
 
+$th_pink: #e84a5f;
+$th_dark: #2a363b;
+
 // NAVBAR
 .header {
   background: transparent !important;
   box-shadow: none !important;
   margin-bottom: 40px;
+  .icon {
+    height: 80px;
+    width: 120px;
+    margin-bottom: 18px;
+    fill: #201d1db2;
+    transition: all 0.5s ease-out;
+
+    &:hover {
+      fill: #fff;
+    }
+
+    &:hover::before {
+      transform: translateY(0);
+      transition: transform 0.25s ease-out;
+    }
+  }
 
   .navlink {
     font-family: "Archia";
@@ -99,41 +118,32 @@
       transition: transform 0.25s ease-out;
     }
   }
-
-  .icon {
-    height: 80px;
-    width: 120px;
-    margin-bottom: 18px;
-    fill: #201d1db2;
-    transition: all 0.5s ease-out;
-
-    &:hover {
-      fill: #fff;
-    }
-
-    &:hover::before {
-      transform: translateY(0);
-      transition: transform 0.25s ease-out;
-    }
-  }
 }
+.icon {
+  width: 13vh;
+  fill: #1d1f20;
+  transition: all 0.5s ease-out;
 
-.center {
-  align-content: center;
+  &:hover {
+    fill: #fff;
+  }
+
+  &:hover::before {
+    transform: translateY(0);
+    transition: transform 0.25s ease-out;
+  }
 }
 
 // LANDING PAGE
 .landing-content {
-  padding-top: 80px;
-  padding-left: 40px;
-  min-height: 72vh;
+  min-height: 102.6vh;
+  padding-top: 100px;
   font-family: "Archia";
   color: #201d1db2;
-
+  margin-bottom: 20px;
   .header {
-    font-size: 4rem;
-    margin-bottom: 10px;
-
+    font-size: 9vh;
+    margin-bottom: 20px;
     .first {
       animation-name: fadeInDown;
       animation-duration: 0.45s;
@@ -154,10 +164,9 @@
   }
 
   .image {
-    height: 37vmin;
+    height: 40vh;
     border-radius: 50% !important;
-    margin-bottom: 50px;
-    border: 1vh solid #8f97a3b7;
+    border: 1vh solid #94702d86;
     animation-name: fadeIn;
     animation-duration: 1s;
     animation-delay: 0s;
@@ -167,22 +176,24 @@
 
 // PROJECTS PAGE
 .projects-page {
+  padding-top: 10vw;
   color: #000000;
   font-family: "Archia";
   animation-name: fadeInUp;
   animation-duration: 0.55s;
   animation-delay: 1s;
   opacity: 0;
+  text-align: center;
   animation-fill-mode: forwards;
+  min-height: 95vh;
 
   .list {
-    padding-top: 80px;
-    padding-left: 40px;
+    margin-top: 50px;
   }
 
   .image {
+    display: inline-block;
     border-radius: 1% !important;
-    margin-top: 20px;
   }
 
   a {
@@ -205,8 +216,7 @@
 // SKILLS PAGE
 .skills-page {
   font-family: "Archia";
-  padding-top: 40px;
-  padding-left: 40px;
+  padding-top: 15vh;
   display: flex;
   animation-name: fadeInUp;
   animation-duration: 0.75s;
@@ -215,15 +225,16 @@
   animation-fill-mode: forwards;
 
   .caption {
-    position: absolute;
+    position: relative;
     top: 98%;
+
     text-transform: uppercase;
     font-size: 0.8rem;
   }
 
   .card {
-    width: 200px;
-    height: 200px;
+    width: 30vh;
+    height: 30vh;
     margin-bottom: 30px;
     background: rgb(255, 255, 255);
     align-items: center;
