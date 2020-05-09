@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import clsx from "clsx"
 import Typography from "@material-ui/core/Typography"
@@ -58,6 +58,7 @@ const useStyles = makeStyles(theme => ({
     color: "white",
     margin: "5vh",
     fontSize: "2.5rem",
+    textDecoration: "none",
 
     "&:hover": {
       textDecoration: "none",
@@ -71,6 +72,20 @@ const useStyles = makeStyles(theme => ({
     right: "1%",
     top: "30%",
     color: "white",
+  },
+  icon: {
+    width: "13vh",
+    fill: "#1d1f20",
+    transition: "all 0.5s ease-out",
+
+    "&:hover": {
+      fill: "#fff",
+    },
+
+    "&:hover::before": {
+      transform: "translateY(0)",
+      transition: "transform 0.25s ease-out",
+    },
   },
 }))
 
@@ -99,8 +114,8 @@ const Header = () => {
       >
         <Toolbar>
           <div className={classes.title}>
-            <div className="icon">
-              <AniLink to="/" cover direction="right" bg="#98b8ec">
+            <div className={classes.icon}>
+              <AniLink to="/" cover direction="right" bg="#FFCC00">
                 <SVGIcon />
               </AniLink>
             </div>
@@ -137,7 +152,7 @@ const Header = () => {
           component={AniLink}
           variant="h5"
           paintDrip
-          hex="#98b8ec"
+          hex="#FFCC00"
           to="/"
         >
           Home
@@ -147,7 +162,7 @@ const Header = () => {
           component={AniLink}
           variant="h5"
           paintDrip
-          hex="#98b8ec"
+          hex="#FFCC00"
           to="/projects"
         >
           Projects
@@ -157,7 +172,7 @@ const Header = () => {
           className={classes.navlink}
           component={AniLink}
           cover
-          bg="#98b8ec"
+          bg="#FFCC00"
           variant="h5"
           to="/skills"
         >
@@ -170,7 +185,7 @@ const Header = () => {
           component={AniLink}
           to="/about"
           cover
-          bg="#98b8ec"
+          bg="#FFCC00"
           duration={2}
           direction="down"
         >

@@ -2,7 +2,8 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Link } from "gatsby"
-import { Container, Row, Col } from "reactstrap"
+import Container from "@material-ui/core/Container"
+import Grid from "@material-ui/core/Grid"
 import SkillCard from "../components/skillCard"
 import { skills } from "../util/skillsItems"
 
@@ -12,13 +13,18 @@ const Skills = () => (
   <Layout>
     <SEO title="My Skills" />
     <Container className="skills-page">
-      <Row>
+      <Grid
+        container
+        direction="row"
+        justify="space-around"
+        alignItems="center"
+      >
         {skills.map(({ url, caption }) => (
-          <Col lg={3} key={url} md={4} sm={6}>
+          <Grid item lg={3} key={url} md={4} sm={6}>
             <SkillCard url={url} caption={caption} />
-          </Col>
+          </Grid>
         ))}
-      </Row>
+      </Grid>
     </Container>
     <Link to="/projects" style={{ color: "transparent", fontSize: "0rem" }}>
       a

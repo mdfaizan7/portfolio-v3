@@ -2,7 +2,6 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Link } from "gatsby"
-// import { Container, Row, Col } from "reactstrap"
 // mui stuff
 import List from "@material-ui/core/List"
 import ListItem from "@material-ui/core/ListItem"
@@ -91,7 +90,7 @@ const IndexPage = () => {
                   Live Demo
                 </a>
               </Grid>
-              <Grid item className="text-center" md={6}>
+              <Grid item md={6}>
                 <a
                   href={
                     selectedIndex === 0

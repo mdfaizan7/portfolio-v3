@@ -4,8 +4,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import TypingEffect from "../components/typingEffect"
 import Grid from "@material-ui/core/Grid"
-import Container from "@material-ui/core/Container"
-import Typography from "@material-ui/core/Typography"
 import MyImg from "../images/my-img.jpg"
 
 import "../styles/App.scss"
