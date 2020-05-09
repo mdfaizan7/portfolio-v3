@@ -4,7 +4,7 @@ import clsx from "clsx"
 import SVGIcon from "./svgIcon.js"
 // mui stuff
 import { makeStyles, useTheme } from "@material-ui/core/styles"
-import Appbar from "@material-ui/core/Appbar"
+import AppBar from "@material-ui/core/AppBar"
 import CssBaseline from "@material-ui/core/CssBaseline"
 import Toolbar from "@material-ui/core/Toolbar"
 import Typography from "@material-ui/core/Typography"
@@ -108,7 +108,7 @@ const Header = () => {
   return (
     <>
       <CssBaseline />
-      <Appbar
+      <AppBar
         position="fixed"
         color="inherit"
         className={clsx(classes.appBar, {
@@ -132,7 +132,7 @@ const Header = () => {
             <MenuIcon fontSize="large" />
           </IconButton>
         </Toolbar>
-      </Appbar>
+      </AppBar>
       <Drawer
         className={classes.drawer}
         variant="persistent"
