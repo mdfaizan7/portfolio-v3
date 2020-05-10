@@ -12,6 +12,7 @@ import Grid from "@material-ui/core/Grid"
 // images
 import bitConnect from "../images/bit-connect.png"
 import bitBlogs from "../images/bit-blogs.png"
+import bitPosts from "../images/bit-posts.png"
 
 import "../styles/App.scss"
 
@@ -67,13 +68,15 @@ const IndexPage = () => {
             <Grid container>
               {selectedIndex === 0 ? (
                 <img src={bitConnect} alt="bitConnect" className="image" />
-              ) : (
+              ) : selectedIndex === 1 ? (
                 <img src={bitBlogs} alt="bitBlogs" className="image" />
+              ) : (
+                <img src={bitPosts} alt="bitBlogs" className="image" />
               )}
             </Grid>
             <Grid
               container
-              justify="center"
+              justify="space-evenly"
               alignItems="center"
               direction="row"
             >
@@ -82,12 +85,14 @@ const IndexPage = () => {
                   href={
                     selectedIndex === 0
                       ? "https://bitconnect-b7b67.firebaseapp.com/"
-                      : "https://peaceful-montalcini-173481.netlify.app/"
+                      : selectedIndex === 1
+                      ? "https://peaceful-montalcini-173481.netlify.app/"
+                      : "https://github.com/mdfaizan7/merng-bitposts-client"
                   }
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Live Demo
+                  {selectedIndex === 2 ? "Client-side Repository" : "Live Demo"}
                 </a>
               </Grid>
               <Grid item md={6}>
@@ -95,12 +100,16 @@ const IndexPage = () => {
                   href={
                     selectedIndex === 0
                       ? "https://github.com/mdfaizan7/react-bitConnect-client"
-                      : "https://github.com/mdfaizan7/gatsby-bit-blogs"
+                      : selectedIndex === 1
+                      ? "https://github.com/mdfaizan7/gatsby-bit-blogs"
+                      : "https://github.com/mdfaizan7/merng-bitposts-server"
                   }
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Code Repository
+                  {selectedIndex === 2
+                    ? "Server-side Repository"
+                    : "Code Repository"}
                 </a>
               </Grid>
             </Grid>
