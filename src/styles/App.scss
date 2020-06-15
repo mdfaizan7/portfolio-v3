@@ -136,8 +136,15 @@
     border-radius: 1% !important;
   }
 
+  .github {
+    text-decoration: underline !important;
+    font-size: 3vh;
+    color: "#000000";
+    transition: all 0.5s ease-out;
+  }
+
   a {
-    text-decoration: none !important;
+    text-decoration: none;
     font-size: 2.4vh;
     color: #000000;
     transition: all 0.5s ease-out;

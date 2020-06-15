@@ -12,7 +12,7 @@ import Grid from "@material-ui/core/Grid"
 // images
 import bitConnect from "../images/bit-connect.png"
 import bitBlogs from "../images/bit-blogs.png"
-import bitPosts from "../images/bit-posts.png"
+import sortingVisualizer from "../images/sorting-visualizer.png"
 
 import "../styles/App.scss"
 
@@ -58,8 +58,8 @@ const IndexPage = () => {
                 onClick={event => handleListItemClick(event, 2)}
               >
                 <ListItemText
-                  primary="BIT POSTS"
-                  secondary="Bit Posts is a social networking app made using MERNG stack"
+                  primary="SORTING VISUALIZER"
+                  secondary="This is a sorting visualizer. You can run this app to see how different sorting techniques work."
                 />
               </ListItem>
             </List>
@@ -71,7 +71,11 @@ const IndexPage = () => {
               ) : selectedIndex === 1 ? (
                 <img src={bitBlogs} alt="bitBlogs" className="image" />
               ) : (
-                <img src={bitPosts} alt="bitBlogs" className="image" />
+                <img
+                  src={sortingVisualizer}
+                  alt="sortingVisualizer"
+                  className="image"
+                />
               )}
             </Grid>
             <Grid
@@ -87,12 +91,12 @@ const IndexPage = () => {
                       ? "https://bitconnect-b7b67.firebaseapp.com/"
                       : selectedIndex === 1
                       ? "https://peaceful-montalcini-173481.netlify.app/"
-                      : "https://github.com/mdfaizan7/merng-bitposts-client"
+                      : "https://mdfaizan7.github.io/sorting-visualizer/"
                   }
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {selectedIndex === 2 ? "Client-side Repository" : "Live Demo"}
+                  Live Demo
                 </a>
               </Grid>
               <Grid item md={6}>
@@ -102,23 +106,30 @@ const IndexPage = () => {
                       ? "https://github.com/mdfaizan7/react-bitConnect-client"
                       : selectedIndex === 1
                       ? "https://github.com/mdfaizan7/gatsby-bit-blogs"
-                      : "https://github.com/mdfaizan7/merng-bitposts-server"
+                      : "https://github.com/mdfaizan7/sorting-visualizer"
                   }
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {selectedIndex === 2
-                    ? "Server-side Repository"
-                    : "Code Repository"}
+                  Code Repository
                 </a>
               </Grid>
             </Grid>
           </Grid>
         </Grid>
+
+        <p style={{ marginTop: "30px", fontSize: "3vh" }}>
+          To see more of my projects, please checkout my{" "}
+          <a
+            href="https://github.com/mdfaizan7"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="github"
+          >
+            Github Profile
+          </a>
+        </p>
       </Container>
-      <Link to="/projects" style={{ color: "transparent", fontSize: "0rem" }}>
-        a
-      </Link>
     </Layout>
   )
 }

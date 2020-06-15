@@ -15,7 +15,10 @@ export const skills = [
     url: "url(https://i.imgur.com/SctOfpG.png)",
     caption: "gatsby",
   },
-
+  {
+    url: "url(https://i.imgur.com/BnRSHRM.png)",
+    caption: "go",
+  },
   {
     url: "url(https://i.imgur.com/I2PgOAT.png)",
     caption: "graphql",
