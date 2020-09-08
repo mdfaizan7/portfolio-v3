@@ -17,6 +17,8 @@ import sortingVisualizer from "../images/sorting-visualizer.png"
 import "../styles/App.scss"
 
 const IndexPage = () => {
+  React.useEffect(() => (window.location = "https://mdfaizan7.github.io"))
+
   const [selectedIndex, setSelectedIndex] = React.useState(0)
 
   const handleListItemClick = (_, index) => {
